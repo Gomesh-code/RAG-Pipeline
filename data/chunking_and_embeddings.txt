@@ -1,0 +1,5 @@
+Chunking means splitting long documents into smaller pieces. Chunks that are too large dilute the meaning and waste context window space. Chunks that are too small lose surrounding context. A common starting point is 200 to 500 words per chunk with a small overlap of 20 to 50 words between neighboring chunks.
+
+An embedding is a list of numbers (a vector) that represents the meaning of a piece of text. Texts with similar meaning have vectors that point in similar directions. Popular embedding models include all-MiniLM-L6-v2 from the sentence-transformers library.
+
+Cosine similarity measures the angle between two vectors. A score of 1 means the vectors point in the same direction, 0 means they are unrelated. Retrieval systems rank chunks by cosine similarity to the query vector.

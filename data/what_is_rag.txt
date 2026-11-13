@@ -1,0 +1,5 @@
+Retrieval-Augmented Generation (RAG) is a technique that combines a retrieval system with a language model. Instead of relying only on what the model memorized during training, RAG first searches an external knowledge base for relevant passages and then gives those passages to the model as context.
+
+RAG helps reduce hallucinations because the model can ground its answer in real documents. It also lets you update knowledge without retraining the model: you simply add or edit documents in the knowledge base.
+
+A typical RAG pipeline has five steps: load documents, split them into chunks, convert chunks into vectors, retrieve the chunks most similar to the user's question, and generate an answer using those chunks as context.

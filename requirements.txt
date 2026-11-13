@@ -1,0 +1,5 @@
+scikit-learn>=1.3
+numpy>=1.24
+# Optional upgrades:
+# sentence-transformers>=2.2   # neural embeddings (--retriever embedding)
+# anthropic>=0.40              # LLM answers (set ANTHROPIC_API_KEY)

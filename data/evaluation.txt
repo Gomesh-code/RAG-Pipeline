@@ -1,0 +1,5 @@
+Evaluating a RAG system means checking two parts separately. Retrieval quality asks whether the correct chunk appears in the top-k results. Common metrics are hit rate and mean reciprocal rank. Generation quality asks whether the final answer is faithful to the retrieved context and actually answers the question.
+
+A simple beginner evaluation is to write 10 questions whose answers you know, run them through the pipeline, and check by hand whether the right source document was retrieved.
+
+Common failure modes include bad chunk sizes, missing documents in the knowledge base, and prompts that do not tell the model to stay within the provided context.

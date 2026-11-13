@@ -1,0 +1,5 @@
+A vector store is a database designed to store embeddings and quickly find the nearest ones to a query. Examples include FAISS, Chroma, Pinecone, Weaviate and pgvector. For small projects with a few thousand chunks, a plain NumPy array and a dot product are fast enough.
+
+TF-IDF is a classic, non-neural way to turn text into vectors. It scores words by how often they appear in a document, reduced by how common they are across all documents. TF-IDF works well when the question shares exact keywords with the document, but it cannot understand synonyms the way neural embeddings can.
+
+Top-k retrieval means returning the k highest-scoring chunks. Typical values of k are between 3 and 5.
